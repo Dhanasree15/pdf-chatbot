@@ -3,8 +3,7 @@ import PyPDF2
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+app = Flask(__name__)
 
 pdf_text = ""
 chat_history = []
